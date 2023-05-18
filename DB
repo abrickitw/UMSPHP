@@ -1,0 +1,75 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 16, 2023 at 01:18 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `baza`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `korisnici`
+--
+
+CREATE TABLE `korisnici` (
+  `id` int(11) NOT NULL,
+  `korisnik` varchar(50) NOT NULL,
+  `lozinka` varchar(255) NOT NULL,
+  `avatar` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `korisnici`
+--
+
+INSERT INTO `korisnici` (`id`, `korisnik`, `lozinka`, `avatar`) VALUES
+(34, 'Homer', '$2y$10$zdBh.vYn6yQ7gHekZX.yT.gzMWHfdncNFOaDDa/eg4bOzbzA/U/Hu', 'phpDABD'),
+(51, 'PinkPanter', '$2y$10$psVpVpg5XQYG54D1gWEX5uoEYzSHR87evYVsLOweJkmOQr7XEG64a', 'phpB472'),
+(53, 'Towelie', '$2y$10$/xBoUD8vIyxPzQI12fKsZ.k.lbs3LoXxmH1AfauH/nckRRo5BuBoS', ''),
+(64, 'Skinner', '$2y$10$n59knaAnBloNQdPNDJ3oIuWWbIhDktQqpZ8NVhqjFW9I17AaN0qEa', 'php5551'),
+(72, 'Marge', '$2y$10$Jibc0MCiknIWeZKqPUjLmOMfzn7/Hdige/ND94M7BBjdJwq1Mgg92', 'php85D2'),
+(74, 'Flanders', '$2y$10$y2ZVQn0rsruR7jPfVSFhv.YvyG/8xKdHHE7z9bzWgIWzst/hvFuMS', 'php63D9'),
+(82, 'Kenny', '$2y$10$L3RXK2pLxMpihcw6p2Tz/eTAlZqdbw2hpoqHLZIdUP0SJWVEPhgw2', 'php8F3F'),
+(112, 'Bender', '$2y$10$hkVIcDp78MBgVtOMCrdKKOQoSk3AFJuKwy8Vnh4Dkw9f.HuIeUFP.', '20230510134718_'),
+
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `korisnici`
+--
+ALTER TABLE `korisnici`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `korisnici`
+--
+ALTER TABLE `korisnici`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
