@@ -1,0 +1,17 @@
+body {
+    background: #787d82;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+
+
+  .container {
+    overflow: hidden;
+  }
+  
+  
+  

@@ -1,0 +1,19 @@
+PFBC was project requirements 
+
+
+
+
+ADD separate file for JS scripts
+
+ADD log out after X time of inactivity 
+
+ADD current chat history, and animation while fetching the response 
+
+ADD admin and user view 
+
+
+Make it more responsive  on phones and small screens 
+Mobil version 
+Not showing navbar when on home on mobile 
+
+
